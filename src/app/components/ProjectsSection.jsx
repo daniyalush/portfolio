@@ -7,37 +7,52 @@ const projectsData = [
         id: 1,
         title: 'Project 1',
         description: 'Description 1',
-        image: '/images/projects/1.jpg'
+        image: '/images/projects/1.jpg',
+        tag: ["All", "web", "mobile", "design"],
+        gitUrl: '/',
+        previewUrl: '/'
     },
     {
         id: 2,
         title: 'Project 2',
         description: 'Description 2',
-        image: '/images/projects/2.jpg'
+        image: '/images/projects/2.jpg',
+        tag: ["All", "web", "mobile", "design"],
+        gitUrl: '/',
+        previewUrl: '/'
     },
     {
         id: 3,
         title: 'Project 3',
         description: 'Description 3',
-        image: '/images/projects/3.png'
+        image: '/images/projects/3.png',
+        tag: ["All", "web", "mobile", "design"],
+        gitUrl: '/',
+        previewUrl: '/'
     },
     {
         id: 4,
         title: 'Project 4',
         description: 'Description 4',
-        image: '/images/projects/4.png'
+        image: '/images/projects/4.png',
+        tag: ["All", "web", "mobile", "design"],
+        gitUrl: '/',
+        previewUrl: '/'
     },
     {
         id: 5,
         title: 'Project 5',
         description: 'Description 5',
-        image: '/images/projects/5.png'
+        image: '/images/projects/5.png',
+        tag: ["All", "web", "mobile", "design"],
+        gitUrl: '/',
+        previewUrl: '/'
     },
 ];
 
 const ProjectsSection = () => {
     return (
-        <section className="mt-12">
+        <section className="mt-14">
             <h2 className='text-center text-4xl font-bold text-black my-8'>
                 My Projects
             </h2>
@@ -47,8 +62,11 @@ const ProjectsSection = () => {
                         key={project.id}
                         title={project.title}
                         description={project.description}
-                        imgUrl={project.image} />
-                ))};
+                        imgUrl={project.image}
+                        gitUrl={project.gitUrl}
+                        previewUrl={project.previewUrl}
+                    />
+                ))}
             </div>
         </section>
     )
