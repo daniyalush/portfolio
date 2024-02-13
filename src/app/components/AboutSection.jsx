@@ -52,7 +52,7 @@ const AboutSection = () => {
                     Skilled in technologies such as Prisma, Node.js, Express.js, React, TailwindCSS. For databases I use MongoDB and PostgreSQL.
                     Well-versed in DevOps and project management, with additional knowledge of UI/UX design. Familiarity with Firebase and Supabase as well as Daisy UI and Next UI for enhanced user interface design.
                 </p>
-                <div id='grid-2' className=''>
+                <div id='grid-2'>
                     <div className='flex flex-row justify-center mt-8 md:mt-0'>
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
                         <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>Certifications</TabButton>

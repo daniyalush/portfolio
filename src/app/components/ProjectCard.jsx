@@ -15,11 +15,12 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                         <EyeIcon className='h-8 w-8 text-[#9ca3af] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white' />
                     </Link>
                 </div>
+
             </div>
 
             <div className='text-white rounded-b-xl bg-[#181818] py-4 px-4'>
                 <h5 className='text-lg font-semibold mb-2 text-[#e2e8f4]'>{title}</h5>
-                <p className='font-light  text-[#94a3b8]'>{description}</p>
+                <p className='font-light text-[#94a3b8]'>{description}</p>
             </div>
         </div>
     );
