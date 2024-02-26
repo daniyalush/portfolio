@@ -63,8 +63,8 @@ const ProjectsSection = () => {
     );
 
     return (
-        <section className="mt-14">
-            <h2 className='text-center text-4xl font-bold text-black my-8'>
+        <section className="mt-16">
+            <h2 className='text-center text-4xl font-bold text-black my-4'>
                 My Projects
             </h2>
             <div className='text-black flex flex-row justify-center items-center gap-2 py-4 font-semibold'>
